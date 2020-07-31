@@ -1,7 +1,7 @@
 FROM python:3.7-stretch
 
 ARG firefox_ver=79.0
-ARG geckodriver_ver=0.26.0
+ARG geckodriver_ver=0.27.0
 
 RUN apt-get update \
  && apt-get upgrade -y \
