@@ -40,10 +40,3 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/* \
            /tmp/*
 
-EXPOSE 4444
-
-ENTRYPOINT ["geckodriver"]
-
-CMD ["--binary=/opt/firefox/firefox", "--log=debug", "--host=0.0.0.0"]
-
-
