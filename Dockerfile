@@ -21,7 +21,7 @@ RUN apt-get update \
             `apt-cache depends firefox-esr | awk '/Depends:/{print$2}'` \
     \
  # Download and install Firefox
-&& apt-get install -y --no-install-recommends --no-install-suggests \
+&& apt install \
         firefox \
     \
  # Download and install geckodriver
