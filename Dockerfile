@@ -1,13 +1,19 @@
 FROM python:3.7-stretch
 
-RUN apt-get install -y libgconf2-4 libnss3-1d libxss1
-RUN apt-get install -y fonts-liberation libappindicator1 xdg-utils
-
-RUN apt-get install -y software-properties-common
-RUN apt-get install -y curl unzip wget
-
-RUN apt-get install -y xvfb
-
+RUN apt-get update \
+ && apt-get upgrade -y \
+ apt-get install -y \
+ libgconf2-4 \
+ libnss3-1d \
+ libxss1 \
+ fonts-liberation \
+ libappindicator1 \
+ xdg-utils
+ software-properties-common
+ curl \
+ unzip \
+ wget \
+ xvfb \
 
 # install geckodriver and firefox
 
