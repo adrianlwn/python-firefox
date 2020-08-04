@@ -1,2 +1,2 @@
-# python-firefox
-Dockerfile for Python Firefox and Geckodriver
+# Docker Python Firefox
+
